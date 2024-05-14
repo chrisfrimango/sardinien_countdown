@@ -2,6 +2,6 @@ node_modules
 
 .nuxt
 .output
-.dist
+dist
 
 _DS_Store
