@@ -27,12 +27,17 @@ onMounted(() => {
     style="background-image: url(img/sardini.jpg)"
   >
     <h1
-      class="text-4xl sm:text-5xl md:text-6xl uppercase mb-5 text-center px-4"
+      class="text-4xl sm:text-5xl md:text-6xl uppercase mb-5 text-center px-4 custom-effect"
     >
-      Friman going to sardinien in
+      Familjen Friman
     </h1>
+    <h2
+      class="text-3xl sm:text-4xl md:text-5xl uppercase mb-5 text-center px-4"
+    >
+      going to sardinien in
+    </h2>
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 text-center"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 text-center mt-5"
     >
       <div class="flex flex-col bg-amber-300 rounded text-zinc-900 p-3">
         <span class="countdown font-mono text-4xl sm:text-6xl md:text-8xl">
@@ -74,5 +79,15 @@ onMounted(() => {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  .custom-effect {
+    animation: fadeIn 2s ease-in-out;
+    text-shadow: rgb(212, 212, 212) 0px 0px 56px;
+    text-shadow: rgba(62, 66, 66, 0.4) 0px 10px 24px;
+
+    -webkit-box-shadow: 0px 0px 105px 45px rgba(45, 255, 196, 0.9);
+    -moz-box-shadow: 0px 0px 105px 45px rgba(45, 255, 196, 0.9);
+    box-shadow: 0px 0px 105px 45px rgba(45, 255, 196, 0.9);
+  }
 }
 </style>
