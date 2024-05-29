@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-const targetDate = new Date("2024-06-09"); // Sätt ditt måldatum här
+const targetDate = new Date(Date.UTC(2024, 5, 11)); // Sätt ditt måldatum här
 
 const days = ref(0);
 const hours = ref(0);
